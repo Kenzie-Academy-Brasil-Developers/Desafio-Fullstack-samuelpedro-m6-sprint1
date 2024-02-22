@@ -2,6 +2,8 @@
 # Sai em caso de erro
 set -o errexit
 
+yarn start
+
 # Instalação das dependências
 yarn install
 
