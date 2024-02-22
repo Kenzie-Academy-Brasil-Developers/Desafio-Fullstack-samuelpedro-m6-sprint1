@@ -16,4 +16,4 @@ npx prisma migrate save --name nome-da-migracao
 
 # Aplicar Migrações Pendentes:
 
-yarn prisma migrate deploy
+yarn prisma migrate deploy -d dist/data-source
