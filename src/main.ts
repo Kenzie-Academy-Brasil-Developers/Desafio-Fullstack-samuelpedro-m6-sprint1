@@ -5,8 +5,9 @@ import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  app.useGlobalPipes(new ValidationPipe({whitelist: true}), new ValidationPipe({transform:true, transformOptions:{groups: ['transform']}}))
+  const app = await NestFactory.create(AppModule, { cors: true });
+  app.enableCors();
+  app.useGlobalPipes(new ValidationPipe({ whitelist: true }), new ValidationPipe({ transform: true, transformOptions: { groups: ['transform'] } }))
   const config = new DocumentBuilder()
     .setTitle('API de criação de clientes, e vinculação de contatos')
     .setDescription('Cadastre-se, crie e vincule seus contatos!')
