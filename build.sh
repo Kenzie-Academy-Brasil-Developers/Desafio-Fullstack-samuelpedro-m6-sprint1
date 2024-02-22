@@ -2,10 +2,8 @@
 # Sai em caso de erro
 set -o errexit
 
-yarn start
-
 # Instalação das dependências
-yarn install
+yarn
 
 # Compilação do código TypeScript
 yarn build
