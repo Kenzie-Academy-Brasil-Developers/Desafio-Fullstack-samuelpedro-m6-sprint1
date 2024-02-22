@@ -13,3 +13,5 @@ yarn build
 # Aplicar Migrações Pendentes:
 
 yarn prisma migrate deploy
+
+yarn start
