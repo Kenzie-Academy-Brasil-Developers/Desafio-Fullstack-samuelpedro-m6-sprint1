@@ -1,4 +1,3 @@
-// build.sh
 #!/usr/bin/env bash
 # Sai em caso de erro
 set -o errexit
