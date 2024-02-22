@@ -12,4 +12,4 @@ yarn build
 
 # Aplicar Migrações Pendentes:
 
-yarn prisma migrate deploy -d dist/data-source
+yarn prisma migrate deploy
