@@ -3,7 +3,7 @@
 set -o errexit
 
 # Instalação das dependências
-yarn
+yarn install
 
 # Compilação do código TypeScript
 yarn build
