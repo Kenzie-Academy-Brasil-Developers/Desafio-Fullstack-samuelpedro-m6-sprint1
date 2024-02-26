@@ -1,0 +1,371 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .title__dashboard {
+      gap: 4px;
+      font-weight: 800;
+      color: var(--gray-0);
+      font-size: 28px;
+    }
+
+    .Subtitle__dashboard {
+      gap: 4px;
+      font-weight: 800;
+      color: var(--gray-0);
+    }
+
+    .div_button_logout {
+      margin-top: 12px;
+      max-width: 100%;
+
+      .button_logout {
+        background-color: var(--button-modal-color);
+        color: #ffffff;
+        border: 1px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .button_logout:hover {
+        background-color: var(--gray-4);
+        color: var(--gray-0);
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 490px;
+    width: 350px;
+    gap: 12px;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .label {
+    color: var(--gray-4);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    background-color: var(--background-input-color);
+    color: black;
+    height: 25px;
+    border-color: #2e3bcc;
+    box-shadow: 0 0 5px rgba(64, 46, 204, 0.5);
+    padding: 4px;
+  }
+
+  .button {
+    background-color: var(--background-color);
+    color: #ffffff;
+    border: 1px;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-0);
+  }
+
+  .div_allContacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .div_contacts_title {
+      font-size: 16px;
+    }
+
+    .Subtitle__contacts {
+      gap: 4px;
+      font-weight: 800;
+      color: var(--gray-4);
+      font-size: 13px;
+    }
+  }
+}
+
+.custom_modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  height: 400px;
+  overflow: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+
+  .title_modal {
+    gap: 4px;
+    font-weight: 800;
+    color: var(--gray-0);
+    font-size: 28px;
+    margin-left: 22px;
+  }
+
+  .descripition_data {
+    gap: 4px;
+    font-weight: 800;
+    color: var(--gray-0);
+    font-size: 28px;
+  }
+
+  .ul_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .li_cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: var(--li-cards-color);
+      padding: 10px;
+      width: 500px;
+    }
+  }
+
+  .button_modal_edit {
+    background-color: var(--button-modal-color);
+    color: var(--gray-0);
+    border: 1px;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button_modal_edit:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-0);
+  }
+
+  .button_modal_delete {
+    background-color: var(--button-modal-color);
+    color: var(--gray-0);
+    border: 1px;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button_modal_delete:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-0);
+  }
+
+  .p_descripition_modal {
+    font-weight: 800;
+    color: var(--gray-0);
+    font-size: 28px;
+  }
+
+  .button_closeModal {
+    background-color: var(--button-modal-color);
+    color: var(--gray-0);
+    border: 1px;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button_closeModal:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-0);
+  }
+}
+
+.custom_modal_edit {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 100%;
+  max-height: 80%;
+  height: 400px;
+  overflow: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+
+  .title_modal_edit {
+    gap: 4px;
+    font-weight: 800;
+    color: var(--gray-0);
+    font-size: 28px;
+    margin-left: 22px;
+    max-width: 100%;
+  }
+
+  .form_edit {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 100%;
+    height: 250px;
+    background-color: var(--li-cards-color);
+    padding: 10px;
+    gap: 10px;
+    width: 380px;
+    align-items: center;
+    justify-content: center;
+
+    .div_form_name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      width: 300px;
+      max-width: 100%;
+
+      .label_edit {
+        color: var(--gray-0);
+        max-width: 100%;
+      }
+
+      .input_edit {
+        color: var(--gray-0);
+        height: 20px;
+        background-color: var(--button-modal-color);
+        width: 250px;
+        padding: 3px;
+        max-width: 100%;
+      }
+    }
+
+    .div_form_email {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 29px;
+      width: 300px;
+      max-width: 100%;
+
+      .label_edit {
+        color: var(--gray-0);
+        max-width: 100%;
+      }
+
+      .input_edit {
+        color: var(--gray-0);
+        height: 20px;
+        background-color: var(--button-modal-color);
+        width: 250px;
+        padding: 3px;
+        max-width: 100%;
+      }
+    }
+
+    .div_form_telephone {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      width: 300px;
+      max-width: 100%;
+
+      .label_edit {
+        color: var(--gray-0);
+        max-width: 100%;
+      }
+
+      .input_edit {
+        color: var(--gray-0);
+        height: 20px;
+        background-color: var(--button-modal-color);
+        width: 250px;
+        padding: 3px;
+        max-width: 100%;
+      }
+    }
+
+    .button_closeModal {
+      background-color: var(--button-modal-color);
+      color: var(--gray-0);
+      border: 1px;
+      border-radius: 4px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s, color 0.3s;
+      max-width: 100%;
+    }
+
+    .button_closeModal:hover {
+      background-color: var(--gray-4);
+      color: var(--gray-0);
+      max-width: 100%;
+    }
+  }
+}

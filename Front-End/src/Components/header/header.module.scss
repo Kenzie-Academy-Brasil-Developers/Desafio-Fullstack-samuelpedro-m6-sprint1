@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.625rem;
+    height: 6.25rem;
+    background-color: #F8F9FA;
+
+    div {
+        margin-left: 6.25rem;
+        width: 100%;
+    }
+
+    h1{
+        color: #212529;
+        font-weight: 900;
+    }
+    
+    span{
+        color: #FD377E;
+        font-weight: 900;
+    }
+}

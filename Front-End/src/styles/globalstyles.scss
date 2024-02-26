@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #ff577f;
+    --color-primary-focus: #ff427f;
+    --color-primary-negative: #59323f;
+    --background-color: #13293d;
+    --background-input-color: #a39b9b;
+    --li-cards-color: #024765;
+    --button-modal-color: #0086ff;
+
+    --gray-0: #f8f9fa;
+    --gray-1: #868e96;
+    --gray-2: #343b41;
+    --gray-3: #212529;
+    --gray-4: #121214;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    margin-top: 40px;
+}
